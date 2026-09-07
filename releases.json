@@ -1,13 +1,556 @@
-[
-  {
-    "version": "5.0.0.0",
-    "date": "2026-09-06",
-    "title": "Correcciones y mejoras",
-    "notes": [
-      "Se corrigió el cierre inesperado de la aplicación.",
-      "Se mejoró el proceso de actualización.",
-      "Se optimizó la carga de artículos."
-    ],
-    "downloadUrl": "https://github.com/TU_USUARIO/PuntoDeVenta-Updates/releases/download/v5.0.0.0/Update.zip"
-  }
-]
+{
+  "schemaVersion": 1,
+  "productName": "Punto de Venta",
+  "latestVersion": "5.0.0.0",
+  "latestReleaseDate": "2026-09-07",
+  "downloadUrl": "",
+  "versions": [
+    {
+      "version": "5.0.0.0",
+      "releaseDate": "2026-09-07",
+      "title": " TITULO ",
+      "summary": " RESUMEN ",
+      "changes": [
+        " CAMBIOS "
+      ]
+    },
+    {
+      "version": "4.0.0.0",
+      "releaseDate": "2026-07-19",
+      "title": "Mejoras de búsqueda, configuración regional y rendimiento",
+      "summary": "Esta versión mejora la experiencia general del sistema con nuevas opciones de región e idioma, optimizaciones en búsquedas, ajustes visuales y correcciones importantes en ventas, compras, pagos y respaldos.",
+      "changes": [
+        "Se corrigió un error al utilizar la búsqueda avanzada en ventas y compras.",
+        "Se agregó la configuración de país e idioma durante la configuración inicial y también dentro del módulo de Configuración.",
+        "Se mejoró el sistema de búsqueda para ignorar espacios múltiples al ingresar palabras clave.",
+        "Se realizaron mejoras visuales en las tablas de datos para facilitar la lectura de la información.",
+        "Se agregaron nuevas validaciones en formularios para reducir errores al capturar información.",
+        "Se mejoró el funcionamiento general de la búsqueda avanzada.",
+        "Se optimizó el código interno de la aplicación para mejorar estabilidad y mantenimiento.",
+        "Se mejoró el rendimiento al cargar sugerencias de artículos mediante procesamiento en segundo plano.",
+        "Se corrigió un error en el que el botón Nuevo Artículo no se deshabilitaba cuando una venta o compra ya estaba pagada o cancelada.",
+        "Se corrigió un error en Ingresos y Egresos: al registrar un pago desde la lectura de un recibo, ahora se actualiza correctamente el nuevo saldo.",
+        "Ahora cada archivo de registro generado incluye la versión del programa.",
+        "Se ampliaron los datos almacenados para clientes y proveedores, incluyendo calle, número exterior, número interior, colonia y otros datos de domicilio.",
+        "Se aplicaron mejoras visuales adicionales en distintas secciones de la aplicación.",
+        "Se renombraron varias clases del sistema para mejorar la organización del código.",
+        "Ahora las copias de seguridad con más de 30 días de antigüedad se eliminan automáticamente.",
+        "El código fuente fue actualizado para trabajar con Visual Studio 2026.",
+        "Se mejoró el comportamiento cuando se deniega el acceso a un módulo desde la pantalla principal.",
+        "Se ajustaron los temporizadores de búsqueda y de comprobación automática de actualizaciones.",
+        "Se mejoró el código del formulario de inicio Splash Screen.",
+        "Se eliminaron referencias y directivas using que ya no estaban en uso.",
+        "Se mejoró el código encargado de generar códigos QR en los reportes.",
+        "Se ajustaron los atajos de teclado del formulario FrmDatos.",
+        "Se desinstalaron paquetes NuGet innecesarios y se actualizaron los paquetes que sí están en uso."
+      ]
+    },
+    {
+      "version": "3.5.1.0",
+      "releaseDate": "2025-03-13",
+      "title": "Mejoras en el asistente de actualización",
+      "summary": "Esta versión mejora el asistente encargado de instalar actualizaciones del sistema.",
+      "changes": [
+        "Se realizaron ajustes en el asistente de actualización para mejorar su funcionamiento y confiabilidad."
+      ]
+    },
+    {
+      "version": "3.5.0.0",
+      "releaseDate": "2025-03-13",
+      "title": "Importación, exportación y ordenamiento de contactos",
+      "summary": "Esta versión agrega nuevas opciones para administrar contactos y mejora el tiempo de inicio de la aplicación.",
+      "changes": [
+        "Ahora se puede importar y exportar la lista de contactos.",
+        "Se mejoró el tiempo de inicio de la aplicación al descargar la lista de novedades solo cuando el usuario la consulta en Configuración > Acerca de.",
+        "Ahora se puede ordenar la lista de contactos.",
+        "Se realizaron mejoras en el código de la aplicación y en la interfaz visual."
+      ]
+    },
+    {
+      "version": "3.4.0.0",
+      "releaseDate": "2025-03-11",
+      "title": "Calculadora nativa y mejoras en ventas, compras e inventario",
+      "summary": "Esta versión incorpora una calculadora nativa, mejora el manejo de artículos y corrige errores relacionados con compras, pagos mixtos y visualización de información.",
+      "changes": [
+        "Se implementó una calculadora nativa dentro de la aplicación.",
+        "Se realizaron ajustes en la licencia del software.",
+        "Los nuevos artículos ya no se registran automáticamente en el inventario al capturarlos desde compras a proveedores.",
+        "Se corrigió un error que podía generar códigos de artículos duplicados al registrar compras a proveedores.",
+        "Se corrigió un error en la visualización de las etiquetas de pago mixto al momento de cobrar.",
+        "Se agregaron atajos para crear un nuevo artículo desde ventas y compras.",
+        "Se corrigió un error que impedía mostrar correctamente la etiqueta Cantidad en compras a proveedores.",
+        "Se agregó una nueva sección de notificaciones en la barra de título.",
+        "Se realizaron mejoras en el código de la aplicación y en la interfaz visual."
+      ]
+    },
+    {
+      "version": "3.3.0.0",
+      "releaseDate": "2024-12-13",
+      "title": "Correcciones en contactos, permisos y descuentos",
+      "summary": "Esta versión corrige errores relacionados con empleados, artículos, bloqueo de sesión, descuentos y controles de ventas y compras.",
+      "changes": [
+        "Se corrigió un error al guardar el contacto de un nuevo empleado.",
+        "Se corrigió un error que podía generar identificadores o códigos de artículos duplicados.",
+        "Se corrigió un error en el que algunos controles no se bloqueaban al bloquear la sesión del usuario.",
+        "Se corrigió un error que permitía aplicar varios descuentos globales a la vez; ahora los descuentos solo se aplican a los artículos seleccionados.",
+        "Se corrigió un error en el que el precio unitario podía quedar deshabilitado después de seleccionar un artículo y limpiar los datos de una venta o compra.",
+        "Se corrigió un error visual en algunos botones de la interfaz.",
+        "Ahora la descripción y la cantidad de descuentos y envíos no se pueden editar.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "3.2.0.0",
+      "releaseDate": "2024-08-02",
+      "title": "Nueva interfaz principal y modo pantalla completa",
+      "summary": "Esta versión mejora la interfaz principal, agrega pantalla completa y corrige problemas de visualización en formularios y recibos.",
+      "changes": [
+        "Se corrigió un error importante en el que no se mostraba la información del proveedor en el comprobante de pago.",
+        "Se corrigió un error de visualización al redimensionar formularios.",
+        "El tamaño base de los formularios ahora es de 1440 x 900.",
+        "Se agregó un nuevo modo de pantalla completa.",
+        "Ahora se pueden editar artículos haciendo doble clic en la tabla.",
+        "La pantalla principal ahora muestra barra de título, fecha y hora en tiempo real, además de nuevas herramientas.",
+        "Ahora se puede agregar un nuevo registro de Ingresos y Egresos desde la barra de estado.",
+        "El formulario de Datos ahora muestra barra de título y barra de estado."
+      ]
+    },
+    {
+      "version": "3.1.0.0",
+      "releaseDate": "2024-07-05",
+      "title": "Correcciones en inventario y edición de artículos",
+      "summary": "Esta versión corrige duplicados en inventario y mejora la edición de artículos desde ventas y compras.",
+      "changes": [
+        "Se corrigió un error importante que podía duplicar el código de un artículo al insertarlo en inventario desde una compra a proveedor.",
+        "Ahora se puede editar la información de un artículo del inventario desde Ventas Clientes y Compras Proveedores.",
+        "Ahora se muestra una notificación de espera al agregar o editar artículos cuando el proceso puede tardar.",
+        "Al abrir Ventas Clientes o Compras Proveedores, ahora se selecciona automáticamente el último elemento de la tabla.",
+        "Los datos de artículos, registros temporales de ingresos y egresos, y búsqueda ahora se ordenan directamente desde consultas a la base de datos.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "3.0.0.4",
+      "releaseDate": "2024-07-02",
+      "title": "Corrección de descarga de actualizaciones en Windows 7",
+      "summary": "Esta versión mejora la compatibilidad del sistema de actualizaciones y recarga la configuración después de instalar una nueva versión.",
+      "changes": [
+        "Se corrigió el error de canal seguro SSL/TLS al descargar actualizaciones en Windows 7.",
+        "Ahora el archivo de configuración se recarga automáticamente después de instalar una actualización."
+      ]
+    },
+    {
+      "version": "3.0.0.3",
+      "releaseDate": "2024-07-02",
+      "title": "Ajustes en proveedores y compras",
+      "summary": "Esta versión mejora el ordenamiento de proveedores y corrige la inserción de artículos en compras.",
+      "changes": [
+        "Ahora el filtro de proveedores en Artículos Inventario se ordena por nombre.",
+        "Se corrigió un error al insertar artículos en Compras Proveedores."
+      ]
+    },
+    {
+      "version": "3.0.0.2",
+      "releaseDate": "2024-07-01",
+      "title": "Corrección en reporte de jornada laboral",
+      "summary": "Esta versión corrige un problema en el reporte de Registro de Jornada Laboral.",
+      "changes": [
+        "Se corrigió un error en el reporte de Registro de Jornada Laboral."
+      ]
+    },
+    {
+      "version": "3.0.0.1",
+      "releaseDate": "2024-06-29",
+      "title": "Corrección de sugerencias de artículos",
+      "summary": "Esta versión corrige la obtención de sugerencias al registrar artículos de proveedor.",
+      "changes": [
+        "Se corrigió un error al obtener sugerencias de artículos después de registrar un nuevo artículo de proveedor en FrmDatos."
+      ]
+    },
+    {
+      "version": "3.0.0.0",
+      "releaseDate": "2024-06-29",
+      "title": "Nuevo Punto de Venta 3.0.0.0 2024",
+      "summary": "Esta versión presenta una actualización mayor con mejoras en base de datos, reportes, seguridad, permisos, configuración, instalador y administración de información.",
+      "changes": [
+        "Se realizaron amplias mejoras internas en el código.",
+        "Se agregó registro de actividad para el módulo de Artículos.",
+        "Se agregaron más campos a las tablas de la base de datos, incluyendo ID de usuario, fecha de registro, fecha de última modificación, código postal y empresa.",
+        "Se corrigió un error que permitía editar ventas y compras sin permisos al abrirlas desde Registros de Ingresos y Egresos.",
+        "Se agregaron más datos a la vista previa de Buscar.",
+        "Se agregaron más datos a ventas y compras.",
+        "Se mejoraron todos los reportes de impresión.",
+        "Se mejoró la Configuración Inicial de la aplicación.",
+        "Ahora se puede restablecer la contraseña desde la pantalla de inicio de sesión.",
+        "Se eliminó la opción de importar Ingresos y Egresos desde FrmDatos.",
+        "Ahora se puede exportar la lista de clientes y proveedores a Excel.",
+        "Se eliminó la opción de editar artículos directamente desde ventas y compras.",
+        "Se eliminó la opción de exportar recibos en Word.",
+        "Los cambios en FrmDatos ahora se guardan en tiempo real.",
+        "Se reemplazó el campo Sello por Estado en ventas y compras.",
+        "Se reemplazó el campo Proveedor por ID_PROVEEDOR en artículos.",
+        "Ya no es posible eliminar proveedores que tengan artículos registrados en inventario.",
+        "Se corrigió un error importante que podía generar un ID duplicado al insertar un nuevo artículo desde compras.",
+        "Ya no es posible eliminar usuarios registrados; ahora solo pueden desactivarse para conservar la integridad de la información.",
+        "Ahora se validan las versiones de la base de datos.",
+        "Se agregó una nueva forma de escanear y abrir recibos rápidamente desde la pantalla principal.",
+        "Ahora se puede enviar por correo el resumen del corte de caja.",
+        "Al desinstalar la aplicación, ahora se elimina el archivo de configuración en AppData y los directorios creados en la unidad C.",
+        "El instalador ahora crea directorios, acceso directo en el escritorio y permite instalar Access Database Engine."
+      ]
+    },
+    {
+      "version": "2.2.1",
+      "releaseDate": "2022-10-01",
+      "title": "Mejoras generales",
+      "summary": "Esta versión incluye ajustes menores para mejorar la experiencia general.",
+      "changes": [
+        "Se realizaron mejoras generales en la aplicación."
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "releaseDate": "2022-10-01",
+      "title": "Usuarios, permisos y configuración inicial",
+      "summary": "Esta versión agrega administración de usuarios y permisos, mejora varias listas y renueva la configuración inicial.",
+      "changes": [
+        "Se agregó la administración de usuarios y permisos del sistema.",
+        "Se ajustaron controles de la interfaz en Nómina Empleados y Buscar.",
+        "Se agregaron nuevos estilos visuales en las listas de clientes, proveedores y empleados.",
+        "Se quitó una validación de espacios en notas y observaciones que provocaba alertas innecesarias de guardado al perder el foco.",
+        "Ahora las listas de clientes, proveedores y empleados ya no muestran todos los datos de forma predeterminada.",
+        "Se realizaron mejoras internas en el código.",
+        "Se agregó una nueva interfaz de configuración inicial.",
+        "Se corrigió un error importante en el que los directorios predeterminados quedaban vacíos al instalar la aplicación por primera vez."
+      ]
+    },
+    {
+      "version": "2.1.1",
+      "releaseDate": "2022-08-13",
+      "title": "Mejoras en vista previa y listas",
+      "summary": "Esta versión mejora la vista previa de información, ajusta listas principales y corrige el ordenamiento por fechas.",
+      "changes": [
+        "Se mejoró la vista previa de la información.",
+        "Se corrigieron errores en la vista previa de la información.",
+        "Se mejoraron las listas de clientes, proveedores, empleados y contactos.",
+        "Se corrigió un error en el que los Registros de Ingresos y Egresos no se ordenaban por fecha al usar Fecha Anterior o Fecha Siguiente.",
+        "Se ajustaron controles del módulo de Configuración."
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "releaseDate": "2022-08-02",
+      "title": "Envío por correo y exportación de reportes",
+      "summary": "Esta versión agrega envío de reportes por correo, exportación a varios formatos y mejoras importantes en reportes, errores y restauración de copias.",
+      "changes": [
+        "Ahora se pueden enviar por correo electrónico reportes de ventas, compras, nómina, artículos e ingresos y egresos.",
+        "Ahora se pueden exportar reportes a PDF, Microsoft Excel y Microsoft Word.",
+        "Ahora se pueden reportar errores del sistema al desarrollador.",
+        "Se corrigió un error importante en el que no se mostraban todos los artículos al imprimir el recibo de compra en Editar Compra Proveedores.",
+        "Ahora se muestran más datos en la tabla de Buscar.",
+        "Se mejoró el formulario de Error.",
+        "Se mejoró el tiempo de espera al restaurar una copia de seguridad.",
+        "Se ajustaron fuentes, controles y márgenes de todos los reportes.",
+        "Se corrigió un error importante en el que las fechas de abonos en ventas y compras no se ordenaban de forma descendente.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "2.0.6",
+      "releaseDate": "2022-07-14",
+      "title": "Correcciones visuales en ventas",
+      "summary": "Esta versión corrige problemas visuales en Editar Venta Clientes y mejora la pantalla de errores.",
+      "changes": [
+        "Se corrigió un error en el que no se mostraban correctamente todos los botones de Artículos Venta Clientes en Editar Venta Clientes.",
+        "Se realizaron mejoras visuales en el formulario de error."
+      ]
+    },
+    {
+      "version": "2.0.5",
+      "releaseDate": "2022-07-13",
+      "title": "Ajustes visuales y columna de operaciones",
+      "summary": "Esta versión mejora la visualización de ventas, oculta información técnica en Ingresos y Egresos y aplica ajustes visuales.",
+      "changes": [
+        "Se corrigió un error en el que no se mostraban correctamente todos los botones de Artículos Venta Clientes en Editar Venta Clientes.",
+        "Ahora la columna ID_OPERACION de Ingresos y Egresos permanece oculta y solo se muestra al exportar.",
+        "Se realizaron mejoras visuales menores."
+      ]
+    },
+    {
+      "version": "2.0.4",
+      "releaseDate": "2022-07-12",
+      "title": "Pagos mixtos, inventario y mejoras visuales",
+      "summary": "Esta versión agrega pagos mixtos, corrige errores de inventario, filtros, ventas pendientes y cálculos en compras.",
+      "changes": [
+        "Se corrigió un error al generar códigos aleatorios de artículos al insertar artículos desde Compras Proveedores.",
+        "Ahora al eliminar un artículo del inventario se limpia el código relacionado en Artículos Clientes y Proveedores.",
+        "Se corrigió un error al mostrar ventas pendientes.",
+        "Se agregó un nuevo sonido al ingresar artículos.",
+        "Se mejoró la interfaz visual.",
+        "Se corrigió un error en el que el costo de envío se contaba como artículo cuando incluía acento.",
+        "Se corrigió un error en el filtro Este Mes, que antes podía mostrar registros del mes sin importar el año.",
+        "Se corrigió un error en el que no se calculaba el total de pagos al quitar un pago en Editar Compras Proveedores.",
+        "Ahora se pueden registrar pagos mixtos en efectivo y tarjeta de débito o crédito.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "2.0.3",
+      "releaseDate": "2022-07-01",
+      "title": "Correcciones en búsqueda y configuración",
+      "summary": "Esta versión corrige errores al cerrar Buscar Información, mejora códigos QR y ajusta títulos de Configuración.",
+      "changes": [
+        "Se corrigió un error al hacer clic en el botón cerrar del formulario Buscar Información.",
+        "Se aumentó el tamaño del texto del código QR en todos los reportes.",
+        "Se corrigió un error en el que no se mostraban correctamente los títulos de funciones en Configuración."
+      ]
+    },
+    {
+      "version": "2.0.2",
+      "releaseDate": "2022-06-30",
+      "title": "Mejoras en actualizaciones e ingresos y egresos",
+      "summary": "Esta versión mejora el proceso de actualización, el ordenamiento de registros, la importación y exportación a Excel y estilos visuales.",
+      "changes": [
+        "Ahora se eliminan los archivos temporales del directorio de actualización antes de descargar una nueva versión para evitar errores de instalación.",
+        "Los Registros de Ingresos y Egresos ahora se ordenan por categoría de forma predeterminada.",
+        "Se agregaron nuevos estilos visuales en Ingresos y Egresos.",
+        "Se corrigió un error que podía duplicar códigos de artículos del inventario.",
+        "Ahora se pueden importar y exportar a Excel los Registros de Ingresos y Egresos.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "2.0.1",
+      "releaseDate": "2022-06-30",
+      "title": "Mejoras en búsqueda, impresión y configuración",
+      "summary": "Esta versión facilita la búsqueda de artículos, corrige impresoras y mejora la información del sistema.",
+      "changes": [
+        "El botón Buscar Artículo ahora está ubicado junto a los controles de artículos para facilitar el acceso.",
+        "Se corrigió un error en el que no se mostraba correctamente la lista de impresoras en Configuración.",
+        "Se actualizaron los requisitos del sistema en Configuración > Acerca de.",
+        "Ahora la búsqueda se limpia automáticamente al escanear códigos en Buscar.",
+        "Se redujo el tamaño del campo ID_OPERACION en los archivos de registro.",
+        "Se corrigió un error importante en el que no aparecían los artículos seleccionados al imprimir un recibo en Buscar Compra Proveedores."
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "releaseDate": "2022-06-15",
+      "title": "Nuevo Punto de Venta 2.0.0 2022",
+      "summary": "Esta versión presenta una actualización mayor con nuevas funciones en clientes, proveedores, empleados, ingresos y egresos, artículos, contactos, configuración y búsqueda.",
+      "changes": [
+        "Se agregaron nuevas funcionalidades para clientes, proveedores, empleados, ingresos y egresos, artículos, contactos, configuración, búsqueda y más secciones del sistema."
+      ]
+    },
+    {
+      "version": "1.6.3",
+      "releaseDate": "2021-01-20",
+      "title": "Correcciones de configuración, permisos y búsqueda",
+      "summary": "Esta versión agrega accesos útiles, corrige errores de permisos y configuración, y optimiza búsquedas.",
+      "changes": [
+        "Se agregó un acceso directo a la página Mis cuentas SAT.",
+        "Se agregó un nuevo color de resalte en el menú Empleados.",
+        "Se ajustó la etiqueta de monto en la lista de pagos del Visor de Registros.",
+        "Se corrigió una descripción en la sección de actualizaciones.",
+        "Se quitó la notificación de espera al restablecer el sistema.",
+        "Se corrigió un error importante de permisos al acceder a directorios del sistema.",
+        "Se corrigió un error importante en el que la configuración de la aplicación no se cargaba correctamente cuando no había conexión a internet.",
+        "Se optimizó el tiempo de búsqueda en Artículos, Contactos y Empleados.",
+        "Se corrigió un error al sumar la cantidad de artículos en inventario."
+      ]
+    },
+    {
+      "version": "1.6.2",
+      "releaseDate": "2020-11-23",
+      "title": "Mejoras en búsqueda, registros y guardado",
+      "summary": "Esta versión corrige problemas de guardado, mejora alertas de registros y ajusta conceptos de egresos.",
+      "changes": [
+        "Se corrigió un error importante en el que algunas veces no se guardaban los cambios en Buscar Clientes o Buscar Proveedores.",
+        "Se corrigió un error en el que el formulario Herramientas de búsqueda no se mostraba correctamente en equipos con resolución baja.",
+        "En el concepto de Egresos, ahora se muestra Devolución cliente en lugar de Devolución.",
+        "Se mejoraron y agregaron alertas cuando se excede el límite permitido de Registros de Ingresos y Egresos en un corte de caja.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "1.6.1",
+      "releaseDate": "2020-10-27",
+      "title": "Nuevo diseño inicial y mejoras de actualización",
+      "summary": "Esta versión actualiza términos, renueva pantallas iniciales y corrige problemas en descripciones, copias de seguridad y accesos directos.",
+      "changes": [
+        "Se actualizaron los términos y condiciones.",
+        "Se agregó un nuevo diseño para la pantalla Splash.",
+        "Se mejoró el diseño del inicio de sesión.",
+        "Se agregó un nuevo diseño para la configuración inicial.",
+        "Se corrigió un error en el que las descripciones al buscar actualizaciones tenían poca visibilidad.",
+        "Se corrigió un error en el que, después de realizar el corte de caja, la copia de seguridad podía conservar datos temporales.",
+        "Ahora se puede crear un acceso directo desde Configuración > Solucionar problemas > Crear acceso directo."
+      ]
+    },
+    {
+      "version": "1.6.0",
+      "releaseDate": "2020-10-02",
+      "title": "Nuevas herramientas de artículos y búsqueda",
+      "summary": "Esta versión agrega funciones de inventario, herramientas de búsqueda, selección múltiple y mejoras visuales en tablas y artículos.",
+      "changes": [
+        "Se aumentó de 60 a 70 el límite de caracteres del campo Artículo/Descripción.",
+        "La búsqueda automática de actualizaciones ahora se realiza cada 3 horas en lugar de cada 2 horas.",
+        "Se ajustó la alineación solo en las columnas redimensionables de las tablas.",
+        "Se cambió el color de selección de datos.",
+        "Se agregó un nuevo estilo visual en la interfaz de Artículos.",
+        "Ahora las tablas muestran separadores de columnas.",
+        "Se corrigieron varios casos en los que el foco no se enviaba correctamente después de ejecutar algunas funciones.",
+        "Se corrigió un error en el que se generaba un registro al limpiar datos después del corte de caja.",
+        "Se aumentó el tiempo de espera después del corte de caja para permitir la sincronización de la copia de seguridad en la nube.",
+        "Se cambió de texto a número el tipo de dato usado en la tabla Artículos de la base de datos.",
+        "Ahora se muestra la suma de la cantidad en existencia de los artículos del inventario.",
+        "Se agregaron nuevas funciones en Artículos: filtrar, imprimir, calculadora, inicializar inventario y eliminar inventario.",
+        "Se realizaron ajustes visuales en la pantalla Splash.",
+        "Se implementó la función Herramientas de búsqueda en el módulo Buscar.",
+        "Se realizaron mejoras internas en el código.",
+        "Se agregó selección múltiple en Artículos y Buscar."
+      ]
+    },
+    {
+      "version": "1.5.0",
+      "releaseDate": "2020-08-21",
+      "title": "Actualizador automático, sugerencias y notificaciones",
+      "summary": "Esta versión mejora el asistente de actualización, agrega sugerencias de artículos, nuevas notificaciones y ajustes visuales.",
+      "changes": [
+        "Se agregó un nuevo código QR en la pantalla de error.",
+        "Ahora se puede actualizar automáticamente el asistente de actualización de Punto de Venta.",
+        "Se agregaron nuevos iconos y animaciones en la interfaz.",
+        "Se agregó una notificación en Configuración cuando hay una actualización disponible.",
+        "Ahora se muestran sugerencias de artículos mientras se escribe en el campo Artículo / Descripción de clientes y proveedores.",
+        "Ahora se indica cuando una cuenta tiene saldo a favor.",
+        "Se corrigió la alineación de la columna Concepto en la búsqueda de registros de ingresos y egresos.",
+        "Se corrigió un error en el que el sistema podía bloquearse al restablecerlo cuando había una gran cantidad de datos almacenados.",
+        "Se agregaron notificaciones de espera en procesos que pueden tardar.",
+        "Se mejoraron el código, los temporizadores y las búsquedas.",
+        "Se corrigió un problema en el que las notificaciones de espera no mostraban correctamente la animación.",
+        "Se ajustaron las operaciones de clientes para mostrar Contado, Apartado o Crédito.",
+        "Se cambió el título de impresión de Recibo Cliente a Nota de Venta.",
+        "Se realizaron mejoras visuales en el asistente de actualización."
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "releaseDate": "2020-07-28",
+      "title": "Almacenamiento, reportes y comprobación de actualizaciones",
+      "summary": "Esta versión mejora requisitos del sistema, reportes, almacenamiento y seguimiento de comprobaciones de actualización.",
+      "changes": [
+        "Se actualizó la lista de requisitos del sistema en Configuración > Acerca de.",
+        "Se corrigió un error en el que algunas secciones del registro no dejaban suficiente espacio para la información.",
+        "Se corrigió un error en el que Costo de envío y Descuento se sumaban a la cantidad de artículos.",
+        "Se corrigió un error importante en el que no se leían artículos sin fecha de recibido en la búsqueda de proveedores.",
+        "Ahora se puede consultar la cantidad de información almacenada desde Configuración > Almacenamiento.",
+        "Ahora se muestra la fecha de la última comprobación de actualizaciones.",
+        "Se realizaron mejoras visuales en distintas partes de la interfaz.",
+        "Se realizaron mejoras internas en el código."
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "releaseDate": "2020-07-14",
+      "title": "Reimpresión de recibos y actualizaciones automáticas",
+      "summary": "Esta versión agrega reimpresión de recibos, notificaciones de actualización y búsqueda automática de nuevas versiones.",
+      "changes": [
+        "Ahora se pueden reimprimir los últimos recibos de clientes, proveedores y nómina de empleados.",
+        "Se agregó una nueva notificación para instalar actualizaciones.",
+        "Ahora se buscan nuevas actualizaciones automáticamente cada 2 horas.",
+        "Se corrigió un problema que permitía entrar a Pagar buscar proveedores aunque no hubiera saldo por liquidar.",
+        "Ahora se deshabilita el botón Aceptar en lugar de ocultar el formulario Cobrar/Pagar, evitando que el formulario principal quede detrás.",
+        "Se realizaron pequeñas mejoras en las descripciones de algunas interfaces."
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "releaseDate": "2020-07-07",
+      "title": "Correcciones en cobros, pedidos y notificaciones",
+      "summary": "Esta versión corrige errores al cobrar pedidos, mejora notificaciones de espera y ajusta detalles visuales en proveedores y empleados.",
+      "changes": [
+        "Se corrigió un error en el que no se imprimía el pedido al seleccionarlo desde Cobrar buscar clientes.",
+        "Se corrigió un error en el que no se preguntaba al usuario si deseaba imprimir el pedido después de liquidar un apartado en Cobrar buscar clientes.",
+        "Ahora el formulario Cobrar/Pagar se oculta automáticamente después de hacer clic en Aceptar para evitar dobles clics y errores.",
+        "Se agregaron más notificaciones de espera en funciones que pueden tardar.",
+        "Se corrigió un error en el que el texto de Nota en clientes se reemplazaba por Mercancía entregada al liquidar una cuenta desde Cobrar buscar clientes.",
+        "Se corrigió un error en el que la advertencia de vencimiento no se quitaba al liquidar un apartado vencido.",
+        "Se corrigió la alineación de columnas de artículos en proveedores.",
+        "Se corrigió la alineación de un elemento en el registro de empleados.",
+        "Se ajustaron elementos de la interfaz que no se mostraban completos."
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "releaseDate": "2020-06-20",
+      "title": "Correcciones en registros, contactos y pagos",
+      "summary": "Esta versión corrige problemas al abrir registros, simplifica contactos y mejora la visualización de pagos.",
+      "changes": [
+        "Se corrigió un error en el que algunos botones no se habilitaban nuevamente al abrir registros de clientes o proveedores desde Registros de Ingresos y Egresos en el Visor de Registros.",
+        "Se quitaron componentes innecesarios en Contactos.",
+        "Se corrigió un error en el que la lista de pagos de Buscar Proveedores no mostraba los montos con la fuente correcta."
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "releaseDate": "2020-06-18",
+      "title": "Mejoras visuales y atajos de teclado",
+      "summary": "Esta versión actualiza especificaciones técnicas, agrega sonido de inicio y mejora la interfaz.",
+      "changes": [
+        "Se actualizó la lista de especificaciones técnicas en Acerca de.",
+        "Se agregó un nuevo sonido de inicio.",
+        "Se realizaron mejoras en la interfaz visual.",
+        "Se agregaron atajos de teclado faltantes."
+      ]
+    },
+    {
+      "version": "1.1.1",
+      "releaseDate": "2020-06-14",
+      "title": "Corrección en notas de clientes",
+      "summary": "Esta versión corrige la impresión del sello de pagado en notas nuevas.",
+      "changes": [
+        "Se corrigió un error en el que no se mostraba el sello Pagado en las nuevas notas de clientes."
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "releaseDate": "2020-06-10",
+      "title": "Mejoras de cierre, reinicio y búsqueda",
+      "summary": "Esta versión elimina referencias conflictivas, mejora el cierre de la aplicación, agrega reinicio automático y acelera búsquedas.",
+      "changes": [
+        "Se eliminaron referencias que causaban conflictos: MICROSOFT.OFFICE.CORE y VBIDE.",
+        "Se mejoró el código encargado de forzar el cierre de la aplicación.",
+        "Ahora la aplicación se reinicia automáticamente al restablecer el sistema o restaurar copias de seguridad.",
+        "Ahora se valida que existan todos los elementos antes de agregar una fila a las listas del Visor de Registros.",
+        "Se quitó la nota Hubo cambios en Proveedores.",
+        "Se agregaron nuevos efectos visuales al abrir algunas ventanas.",
+        "Se mejoró considerablemente el tiempo de respuesta al realizar búsquedas."
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "releaseDate": "2020-06-08",
+      "title": "Mejoras en impresoras, notificaciones y registros",
+      "summary": "Esta versión mejora la lista de impresoras, agrega información de versión y corrige registros de egresos.",
+      "changes": [
+        "Ahora la lista de impresoras se muestra con mejor presentación.",
+        "Se quitó el campo Código postal de Configuración > Información de la empresa.",
+        "Se agregaron más notificaciones de espera en funciones específicas.",
+        "Se agregó la versión del programa en el título de la ventana principal.",
+        "Se agregaron especificaciones y lista de novedades en Acerca de.",
+        "Se corrigió un error en el que el registro de Egresos mostraba la lista de Ingresos."
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "releaseDate": "2020-06-06",
+      "title": "Actualización de requisitos y recibos de proveedores",
+      "summary": "Esta versión actualiza Access Database Engine, mejora recibos de proveedores y corrige una opción de cálculo en clientes.",
+      "changes": [
+        "Se actualizó Access Database Engine 2007 a Access Database Engine 2010.",
+        "Se agregó una línea para firma en los recibos impresos de proveedores.",
+        "Se corrigió un problema en el que no se ocultaba la opción de calcular cambio en Buscar Clientes."
+      ]
+    }
+  ]
+}
