@@ -1,0 +1,13 @@
+[
+  {
+    "version": "5.0.0.0",
+    "date": "2026-09-06",
+    "title": "Correcciones y mejoras",
+    "notes": [
+      "Se corrigió el cierre inesperado de la aplicación.",
+      "Se mejoró el proceso de actualización.",
+      "Se optimizó la carga de artículos."
+    ],
+    "downloadUrl": "https://github.com/TU_USUARIO/PuntoDeVenta-Updates/releases/download/v5.0.0.0/Update.zip"
+  }
+]
