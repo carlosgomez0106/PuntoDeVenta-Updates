@@ -5,15 +5,39 @@
   "latestReleaseDate": "2026-09-07",
   "downloadUrl": "",
   "versions": [
-    {
-      "version": "5.0.0.0",
-      "releaseDate": "2026-09-07",
-      "title": " TITULO ",
-      "summary": " RESUMEN ",
-      "changes": [
-        " CAMBIOS "
-      ]
-    },
+  {
+    "version": "5.0.0.0",
+    "releaseDate": "2026-09-08",
+    "title": "Migración a .NET 10 y Configuración Local Centralizada",
+    "summary": "Actualización mayor: migración de .NET Framework 4.7 a .NET 10, implementación de almacenamiento de configuración en JSON con versionado automático, y correcciones de errores visuales en módulos de pago.",
+    "changes": [
+      "MIGRACIÓN DE .NET FRAMEWORK 4.7 A .NET 10",
+      "ALMACENAMIENTO DE CONFIGURACIÓN LOCAL EN JSON",
+      "  - Se implementó servicio centralizado de configuración (ConfiguracionApp)",
+      "  - Archivo almacenado en: C:\\ProgramData\\Carlos Corporation\\Punto de Venta\\config.json",
+      "  - Se eliminó dependencia de Properties.Settings",
+      "  - Se añadió versionado automático de esquema de configuración",
+      "  - Migración automática de valores existentes (user.config heredado)",
+      "  - Preservación de configuración del cliente al actualizar la aplicación",
+      "ELIMINACIÓN DE DEPENDENCIAS LEGADAS",
+      "  - Removido Properties/Settings.settings y Settings.Designer.cs",
+      "  - Removido acceso a ConfigurationManager en App.config",
+      "  - Eliminado paquete System.Configuration.ConfigurationManager",
+      "ERRORES DE VISUALIZACIÓN CORREGIDOS",
+      "  - Corrección en módulo de Pago Mixto (FrmCobrarPagar)",
+      "  - Corrección en ventana Acerca De (FrmMain)",
+      "ELIMINACIÓN DE COMPONENTES OBSOLETOS",
+      "  - Se removió la clase WshShortcutHelper.cs",
+      "MEJORAS EN INSTALACIÓN Y ACTUALIZACIÓN",
+      "  - Validación mejorada de componente ACCESS DATABASE ENGINE",
+      "  - Mejoras en el Asistente de Actualización",
+      "  - Búsqueda de actualizaciones optimizada",
+      "  - Formulario de novedades se muestra tras instalar actualización",
+      "  - Eliminada opción de instalación de ACCESS DATABASE ENGINE en configuración inicial",
+      "CORRECCIÓN DE ERROR CRÍTICO",
+      "  - Corrección importante en registro de venta con pago mixto"
+    ]
+  },
     {
       "version": "4.0.0.0",
       "releaseDate": "2026-07-19",
